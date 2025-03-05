@@ -1,0 +1,254 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Açýk mavi tonu */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Bölümü */
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    height: 500px; /* Header yüksekliði */
+}
+
+    /* Header Ýçeriði */
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-family: 'Playfair Display', serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Metin gölgesi */
+    }
+
+    header p {
+        font-size: 1.2em;
+        margin-top: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Metin gölgesi */
+    }
+
+/* Logo Stili */
+.logo {
+    margin-top: 20px; /* Yazýdan sonra boþluk býrak */
+    width: 400px; /* Logo geniþliði */
+    height: 300px; /* Logo yüksekliði */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Logo arka planý hafif beyaz */
+    border-radius: 15px; /* Köþeleri yuvarlak yap */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image {
+    width: 90%; /* Logo geniþliði */
+    height: 90%; /* Logo yüksekliði */
+    object-fit: cover; /* Fotoðrafý kareye sýðdýr */
+    border-radius: 10px; /* Köþeleri yuvarlak yap */
+}
+
+/* Header Arka Plan Fotoðrafý */
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: brightness(0.6); /* Fotoðrafý solgunlaþtýr */
+}
+
+/* Hizmetler Bölümü */
+.services {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+    .services h2 {
+        text-align: center;
+        color: #4caf50; /* Açýk yeþil tonu */
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+    }
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #e8f5e9; /* Açýk yeþil tonu */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+    .service-item:hover {
+        transform: translateY(-10px); /* Kartlara hover efekti */
+    }
+
+    .service-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .service-item h3 {
+        color: #4caf50; /* Açýk yeþil tonu */
+        margin-bottom: 15px;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .service-item ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+
+/* Vizyon ve Misyon Bölümü */
+.vision-mission {
+    position: relative;
+    width: 100%;
+    padding: 40px 15px; /* Padding azaltýldý */
+    background-color: rgba(0, 0, 0, 0.5); /* Arka plan rengi (koyu overlay) */
+    color: white;
+    text-align: left; /* Metinleri sola hizala */
+    overflow: hidden;
+}
+
+.vision-mission-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('vizyon_misyon.jpg'); /* Arka plan fotoðrafý */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(0.6); /* Fotoðrafý solgunlaþtýr */
+}
+
+.vision-mission h2 {
+    color: white; /* Baþlýk rengi */
+    margin-bottom: 15px; /* Margin azaltýldý */
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em; /* Baþlýk boyutu küçültüldü */
+    padding-left: 50px; /* Baþlýðý daha fazla sola kaydýr */
+}
+
+.vision, .mission {
+    margin-bottom: 15px; /* Margin azaltýldý */
+    position: relative;
+    z-index: 2; /* Metinlerin üstte görünmesini saðlar */
+    padding-left: 50px; /* Metinleri daha fazla sola kaydýr */
+}
+
+/* Ýletiþim Bilgileri Bölümü */
+.contact-section {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Ýletiþim bilgileri arasýndaki boþluk */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ýkon ile metin arasýndaki boþluk */
+}
+
+    .contact-item i {
+        font-size: 1.5em;
+        color: #4caf50; /* Açýk yeþil tonu */
+    }
+
+    .contact-item p {
+        margin: 0;
+        font-size: 1.1em;
+        color: #333;
+    }
+
+/* Kalite Politikamýz Bölümü */
+.quality-policy {
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background-color: #ffffff; /* Beyaz arka plan */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+    border-radius: 15px; /* Köþeleri yuvarlak yap */
+    text-align: center;
+    border: 2px solid #4caf50; /* Yeþil kenarlýk */
+}
+
+.quality-policy-content h2 {
+    color: #4caf50; /* Açýk yeþil tonu */
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.quality-policy-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555; /* Metin rengi */
+    max-width: 800px;
+    margin: 0 auto; /* Metni ortala */
+}
+
+/* Footer Bölümü */
+footer {
+    background-color: #4caf50; /* Açýk yeþil tonu */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+    footer .social-media {
+        margin-top: 10px;
+    }
+
+        footer .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+            footer .social-media a:hover {
+                color: #e0f2f1; /* Açýk mavi tonu */
+            }
